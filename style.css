@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #edf0f5;
+}
+/*  ---------------main Container design----------------------- */
+#container {
+  width: 70%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+}
+/* --------------------------------------left side design */
+#facebook-discripition {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#logo {
+  color: #1877f2;
+  font-size: 4.5rem;
+}
+#dis {
+  color: black;
+  font-size: 2rem;
+}
+/* ===========================================form design */
+#login-form {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login {
+  border-radius: 5px;
+  width: 90%;
+  height: 58%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  background-color: white;
+  box-shadow: 5px 5px 5px white;
+  padding: 10px;
+}
+#email {
+  margin-top: 15px;
+}
+input {
+  width: 92%;
+  height: 45px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.1px solid rgb(193, 190, 190);
+}
+input::placeholder {
+  color: #1877f2;
+  text-align: center;
+}
+
+#log {
+  border: none;
+  width: 92%;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1877f2;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: white;
+}
+#create {
+  border: none;
+  width: 60%;
+  height: 45px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(1, 65, 1);
+  cursor: pointer;
+  margin-top: 5%;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: white;
+}
+#forgot {
+  border: none;
+  width: 92%;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #1877f2;
+  background: white;
+  border-bottom: 0.5px solid gray;
+}
+/*----------------------------------------------------- making responsive  tab*/
+@media screen and (max-width: 950px) {
+  #container {
+    width: 100%;
+    gap: 30px;
+  }
+  #facebook-discripition {
+    width: 40%;
+    margin-top: -100px;
+  }
+  #login-form {
+    width: 60%;
+    height: 70vh;
+  }
+  #logo {
+    color: #1877f2;
+    font-size: 4rem;
+  }
+  #dis {
+    color: black;
+    font-size: 1.3rem;
+  }
+}
+/*----------------------------------------------------- making responsive  phone*/
+
+@media screen and (max-width: 400px) {
+  #container {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #dis {
+    display: none;
+  }
+  #logo {
+    font-size: 3rem;
+    margin-left: 50%;
+  }
+  #facebook-discripition {
+    height: 300px;
+  }
+  #login-form {
+    margin-top: -250px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,114 @@
+/* *{
+
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  background-color: #edf0f5;
+}
+#container {
+    width: 30%;
+    border-radius: 10px;
+    margin: auto;
+    border: 1px solid gray;
+    background-color: white;
+    
+  }
+#login-form {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  #login {
+    border-radius: 5px;
+    width: 90%;
+    height: 58%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    background-color: white;
+    box-shadow: 5px 5px 5px white;
+    padding: 10px;
+  }
+  #email {
+    margin-top: 15px;
+  }
+  input {
+    width: 92%;
+    height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.1px solid rgb(193, 190, 190);
+  }
+  input::placeholder {
+    color: #1877f2;
+    text-align: center;
+  }
+  
+  #sign {
+    border: none;
+    width: 92%;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1877f2;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: white;
+  }
+  #create {
+    border: none;
+    width: 60%;
+    height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(1, 65, 1);
+    cursor: pointer;
+    margin-top: 5%;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: white;
+  }
+  #heading{
+    margin-left:40%;
+    font-weight: bolder;
+    
+    
+  }
+  /*----------------------------------------------------- making responsive  tab*/
+  @media screen and (max-width: 950px) {
+    #container {
+      width: 100%;
+      gap: 30px;
+    }
+    #facebook-discripition {
+      width: 40%;
+      margin-top: -100px;
+    }
+    #login-form {
+      width: 60%;
+      height: 70vh;
+    }
+    #logo {
+      color: #1877f2;
+      font-size: 4rem;
+    }
+    #dis {
+      color: black;
+      font-size: 1.3rem;
+    }
+  }
+  i{
+    font-size: 80px;
+    margin: 10px 10px;
+    cursor: pointer;
+  }
